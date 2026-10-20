@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Ubah nama dan nilai token sebelum membagikan installer.
 TOKEN_NAME='ZeroneXCode Access'
-ACCESS_TOKEN='ZeroneXCode2026'
+ACCESS_TOKEN='theme'
 # Isi URL HTTPS ZIP dan SHA256-nya untuk menjalankan file ini tanpa paket lokal.
 PACKAGE_URL=''
 PACKAGE_SHA256=''
