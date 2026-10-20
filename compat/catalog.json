@@ -1,0 +1,128 @@
+[
+  {
+    "number": 1,
+    "name": "abysspurple",
+    "archive": "abysspurple.zip",
+    "kind": "blueprint",
+    "sha256": "67e9d451e1466f3640ef363d64091f5c6b49b55c35d975a51eefa2d7e0a8036f"
+  },
+  {
+    "number": 2,
+    "name": "arix",
+    "archive": "arix.zip",
+    "kind": "source",
+    "sha256": "85d34771744ec1527b611f096f3f84ed7b1b037e0a8acb61372175f44c4e3e83"
+  },
+  {
+    "number": 3,
+    "name": "billing",
+    "archive": "billing.zip",
+    "kind": "source",
+    "sha256": "9dda839e8a43956b7d87dc8d1b9df9ad2e965d14de15cc375c0e66914cccf541"
+  },
+  {
+    "number": 4,
+    "name": "darkenate",
+    "archive": "darkenate.zip",
+    "kind": "blueprint",
+    "sha256": "353f00f0e79cc410b6bde9b94baa9858e95da8ccb29e26501760f4153120328d"
+  },
+  {
+    "number": 5,
+    "name": "elysium",
+    "archive": "elysium.zip",
+    "kind": "source",
+    "sha256": "66a43679ae595aa9a36017b13c636b0a6db47723daa89ba62e03307406ea3b23"
+  },
+  {
+    "number": 6,
+    "name": "enigma",
+    "archive": "enigma.zip",
+    "kind": "source",
+    "sha256": "65a8689e408938879a8923234a5e4ab1346c715c72bbbbbd280d93046c65ac4f"
+  },
+  {
+    "number": 7,
+    "name": "frostcore",
+    "archive": "frostcore.zip",
+    "kind": "source",
+    "sha256": "86b6708248cea4f68cc2b911816124f6720033ece4362f48d50e99e562011a06"
+  },
+  {
+    "number": 8,
+    "name": "iceMinecraft",
+    "archive": "iceMinecraft.zip",
+    "kind": "source",
+    "sha256": "ec0caf93abe6d4da88f26a72beaae1194e5da45a6587c1b49607b2feb9f9ec33"
+  },
+  {
+    "number": 9,
+    "name": "lemem",
+    "archive": "lemem.zip",
+    "kind": "blueprint",
+    "sha256": "925371288e25bc191a365f18a0e2daee4fc5dfb89e5fbe5565d49adef3dedd87"
+  },
+  {
+    "number": 10,
+    "name": "navyseals",
+    "archive": "navyseals.zip",
+    "kind": "blueprint",
+    "sha256": "cd0bd86bdcc45b62026715999da156fd9b06e249c5824c8c3266452a175fbeac"
+  },
+  {
+    "number": 11,
+    "name": "nebula_v1.8-3",
+    "archive": "nebula_v1.8-3.zip",
+    "kind": "blueprint",
+    "sha256": "cb659beea2e34a52a71c8706933832fa61c9aa288b396a3df13735fd28999211"
+  },
+  {
+    "number": 12,
+    "name": "nebula_v2.0-1",
+    "archive": "nebula_v2.0-1.zip",
+    "kind": "blueprint",
+    "sha256": "f7a77b5ebede3da15520fae5967f0094c60fac0a09a0b045aa9f389e46767e2a"
+  },
+  {
+    "number": 13,
+    "name": "nightcore",
+    "archive": "nightcore.zip",
+    "kind": "source",
+    "sha256": "61c24d7551fe69c9be485bd9479fbdfcfcf5e11454421fb55dfd9f77db4b7723"
+  },
+  {
+    "number": 14,
+    "name": "noobe",
+    "archive": "noobe.zip",
+    "kind": "source",
+    "sha256": "b480884bb3d57d92b13ac9813b6069761694a824f66fccd0a497351cb9f08c98"
+  },
+  {
+    "number": 15,
+    "name": "nook",
+    "archive": "nook.zip",
+    "kind": "source",
+    "sha256": "5551a3013fb505b60c2eb1fd00989d4c6ee2006f3aca997238960943d8da0d5c"
+  },
+  {
+    "number": 16,
+    "name": "nookure",
+    "archive": "nookure.zip",
+    "kind": "source",
+    "sha256": "84b0b053d0717d8274b00b111b18e2bba21f658c345c2ec8a8aef083d970b0ab"
+  },
+  {
+    "number": 17,
+    "name": "recolor",
+    "archive": "recolor.zip",
+    "kind": "blueprint",
+    "sha256": "0939ea62de94005190857b9ca6a1ed90dbce6798e654e22bf14acb99a9ee0186"
+  },
+  {
+    "number": 18,
+    "name": "stellar",
+    "archive": "stellar.zip",
+    "kind": "source",
+    "sha256": "f327681cc2ad38b3f5d925c08b0179df2490b821cad8dcb1427f305f07ac851f"
+  }
+]

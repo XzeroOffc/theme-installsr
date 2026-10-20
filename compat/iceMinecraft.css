@@ -1,0 +1,32 @@
+/* Nama komponen menggantikan hash kelas dari build panel lama. */
+a[class*="ServerRow"], a[class*="StyledServerRow"] {
+    background-color: var(--main-color) !important;
+}
+[class*="SubNavigation"] {
+    background-color: transparent !important;
+}
+input, textarea, select,
+[class*="DatabaseRow"], [class*="UserRow"], [class*="ContentBox"],
+[class*="EditScheduleModal"], [class*="CreateBackupButton"] {
+    background-color: var(--secundary-color) !important;
+}
+[class*="TitledGreyBox"], [class*="GreyRowBox"] {
+    background-color: var(--main-color);
+}
+.theme-installsr-stat_block, .theme-installsr-chart_container {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+}
+[class*="PermissionRow"]:hover {
+    background-color: var(--tertiary-color);
+}
+
+[class*="ScheduleContainer"][class*="GreyRowBox"],
+[class*="Modal___StyledDiv2"], [class*="TitledGreyBox___StyledDiv2"] {
+    background-color: var(--secundary-color);
+}
+[class*="SubNavigation"] {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}

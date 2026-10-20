@@ -1,0 +1,14 @@
+.ti-community { margin: 1.5rem 0 2rem; color: inherit; }
+.ti-community h2 { font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem; }
+.ti-community-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.ti-community-card { display: flex; flex-direction: column; align-items: center; gap: .85rem; padding: 1.5rem 1rem; background: var(--700, var(--secundary-color, rgba(127,127,127,.12))); border: 1px solid rgba(127,127,127,.4); border-radius: .6rem; text-align: center; min-width: 0; }
+.ti-community-card h3 { font-size: 1.1rem; font-weight: 700; overflow-wrap: anywhere; }
+.ti-community-card p { overflow-wrap: anywhere; }
+.ti-community-card img { width: 64px; height: 64px; object-fit: contain; }
+.ti-community-card a { display: block; margin-top: auto; width: 100%; padding: .8rem; min-height: 44px; color: inherit; background: var(--900, var(--main-color, rgba(127,127,127,.12))); border: 1px solid currentColor; border-radius: .4rem; text-decoration: none; }
+.ti-community a:focus-visible, .ti-community-empty a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.ti-community-card a:hover { text-decoration: underline; }
+.ti-community-empty { margin: 1rem 0; padding: 1rem; border: 1px solid currentColor; }
+.ti-community-empty a { text-decoration: underline; }
+@media (max-width: 700px) { .ti-community-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 380px) { .ti-community-grid { grid-template-columns: 1fr; } }

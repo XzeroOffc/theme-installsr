@@ -114,3 +114,55 @@ python3 -m unittest discover -s compat -p 'test_*.py'
 ```
 
 Background/font eksternal tetap mengikuti paket asli. Aset eksternal yang tidak tersedia dapat menyebabkan tampilan berbeda.
+
+
+## Pembaruan admin dan pengaturan komunitas (versi 4)
+
+Untuk panel yang sudah memakai versi sebelumnya, ekstrak ZIP baru lalu jalankan installer dan pilih kembali nomor tema aktif. Enigma pada contoh adalah nomor 6. Installer versi 3 yang masih memiliki state dapat memasang pembaruan ini dari baseline yang sama. Jika file tema diedit manual setelah instalasi, pengaman perubahan file tetap berlaku.
+
+Pada owner (user ID 1), buka **Admin > Pengaturan Tema**, atau `/admin/theme-installsr`. Atur judul bagian komunitas, nama, keterangan, URL, dan status aktif untuk Chat Admin, Channel, serta Group. Simpan lalu muat ulang dashboard. Perubahan tautan tidak membutuhkan build ulang. Chat adalah tautan menuju layanan chat yang Anda isi, bukan aplikasi percakapan internal baru.
+
+Pengaturan kosong tidak membuat tombol palsu. Pemilik melihat petunjuk menuju pengaturan; pengguna biasa tidak melihat kartu yang belum diisi. Tombol dengan URL valid membuka tab baru. URL dibatasi ke HTTP/HTTPS, form memakai CSRF, dan backend menolak akses edit selain ID 1. Guard Protection tetap berjalan sebelumnya, termasuk respons penolakan miliknya.
+
+Pengaturan komunitas tersimpan per tema di `storage/app/theme-installsr/preferences.json`. Ini tidak menambah tabel atau mengubah database Store. File preferensi berada di luar catatan file tema, sehingga tidak ikut dihapus ketika berganti tema. Cadangkan file tersebut bila memindahkan panel. Nama tema pada form diperiksa untuk mencegah tab pengaturan lama menyimpan ke tema yang baru aktif.
+
+Warna halaman admin, sidebar, tabel, form, dan tombol mengikuti profil warna tema aktif. Elysium dan Stellar membaca warna dari tabel pengaturan tema yang memang sudah mereka gunakan. Tata letak admin tetap memakai komponen Pterodactyl agar menu dan fungsi yang sudah dimodifikasi tetap tersedia. Penyesuaian mobile memperbaiki sidebar dan area konten; meta viewport admin mengizinkan zoom.
+
+Fitur admin/komunitas berlaku untuk sembilan tema source/CSS yang didukung. Ekstensi Blueprint tetap memakai lifecycle dan pengaturannya sendiri. Arix dan Billing tetap diblokir.
+
+## Bash dengan token akses
+
+Jalankan `sudo bash install.sh` dari paket yang sudah diekstrak.
+Alur: periksa/pasang dependensi dasar, bersihkan layar, masukkan token,
+bersihkan layar, pilih nomor tema. Maksimal tiga percobaan token. Input disembunyikan.
+
+Edit bagian atas `install.sh` sebelum membagikan:
+
+```bash
+TOKEN_NAME='ZeroneXCode Access'
+ACCESS_TOKEN='ZeroneXCode2026'
+PACKAGE_URL=''
+PACKAGE_SHA256=''
+```
+
+Token awal: `ZeroneXCode2026`. Ganti `ACCESS_TOKEN` dengan token sendiri.
+Token lokal bukan lisensi server. Pembaca file dapat melihat token atau melewati
+pemeriksaan dengan menjalankan Python langsung.
+
+Ubuntu/Debian: installer otomatis memasang dependensi dasar yang belum tersedia
+(Python 3, curl, CA certificates, tar, Git, build-essential). Installer tidak
+memasang panel baru, mengganti PHP, atau mengubah Node/Yarn yang sudah ada.
+Panel 1.15.1 lengkap, PHP yang sesuai, Node >=22 dan Yarn Classic 1.x tetap
+harus tersedia. Pemeriksaan panel memberi pesan jika ada yang kurang.
+
+Untuk GitHub: unggah ZIP lengkap sebagai aset Release. Salin `install.sh`
+sebagai launcher terpisah. Isi `PACKAGE_URL` dengan URL HTTPS aset tersebut dan
+`PACKAGE_SHA256` dengan hasil `sha256sum theme-installsr.zip`. Jangan mengemas
+ulang ZIP setelah menghitung hash. Upload launcher yang sudah diisi ke repositori.
+Saat launcher tidak menemukan paket lokal, ia meminta token dahulu, mengunduh ZIP,
+memeriksa checksum dan path ZIP, lalu menjalankan menu. Direktori sementara dihapus
+saat proses selesai. URL repositori belum dikonfigurasi dalam paket ini.
+
+Unduh launcher ke file lalu jalankan `sudo bash install.sh`. Token/menu membutuhkan
+terminal interaktif. `NO_COLOR=1` menonaktifkan warna. Terminal sempit memakai daftar
+ringkas agar nama dan status tetap terbaca. Footer: © 2026 - 2027 ZeroneXCode.

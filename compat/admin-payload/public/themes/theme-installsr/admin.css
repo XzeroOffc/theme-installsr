@@ -1,0 +1,40 @@
+body.skin-blue, body.skin-blue .wrapper, .skin-blue .content-wrapper, .skin-blue .right-side { background: var(--ti-bg); color: var(--ti-bg-text); min-width: 0; }
+.skin-blue .main-header .navbar, .skin-blue .main-header .logo, .skin-blue .main-sidebar, .skin-blue .left-side, .skin-blue .main-footer { background: var(--ti-panel); color: var(--ti-text); }
+.skin-blue .main-header .logo:hover, .skin-blue .main-header .navbar .sidebar-toggle:hover { background: var(--ti-bg); }
+.skin-blue .main-header .navbar .nav>li>a, .skin-blue .main-header .navbar .sidebar-toggle { color: var(--ti-text); }
+.skin-blue .sidebar-menu>li.header { background: var(--ti-bg); color: var(--ti-muted); }
+.skin-blue .sidebar a { color: var(--ti-text); }
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a { background: var(--ti-bg); color: var(--ti-text); border-left-color: var(--ti-accent); }
+.skin-blue .box, .skin-blue .box-header, .skin-blue .box-footer, .skin-blue .nav-tabs-custom, .skin-blue .nav-tabs-custom>.tab-content, .skin-blue .modal-content { background: var(--ti-panel); color: var(--ti-text); border-color: var(--ti-border); }
+.skin-blue .box-header.with-border, .skin-blue .table>tbody>tr>td, .skin-blue .table>thead>tr>th, .skin-blue .main-footer { border-color: var(--ti-border); }
+.skin-blue .table-striped>tbody>tr:nth-of-type(odd), .skin-blue .table-hover>tbody>tr:hover, .skin-blue .well, .skin-blue .list-group-item { background: var(--ti-bg); color: var(--ti-text); }
+.skin-blue .nav-tabs-custom>.nav-tabs>li.active { border-top-color: var(--ti-accent); }
+.skin-blue .nav-tabs-custom>.nav-tabs>li>a, .skin-blue .nav-tabs-custom>.nav-tabs>li.active>a { background: var(--ti-panel); color: var(--ti-text); border-color: var(--ti-border); }
+.skin-blue .form-control, .skin-blue .select2-selection, .skin-blue .select2-dropdown, .skin-blue .input-group-addon { background: var(--ti-bg); color: var(--ti-text); border-color: var(--ti-muted); }
+.skin-blue .form-control::placeholder, .skin-blue .help-block, .skin-blue .text-muted { color: var(--ti-muted); }
+.skin-blue .select2-selection__rendered { color: var(--ti-text) !important; }
+.skin-blue .form-control:focus { border-color: var(--ti-accent); }
+.skin-blue .btn-primary { background: var(--ti-accent); color: var(--ti-accent-text); border: 1px solid var(--ti-accent); }
+.skin-blue .btn-default { background: var(--ti-bg); color: var(--ti-text); border-color: var(--ti-muted); }
+.skin-blue .breadcrumb { background: var(--ti-panel); }
+.skin-blue .breadcrumb>li, .skin-blue .breadcrumb>li>a, .skin-blue .content a:not(.btn) { color: var(--ti-text); }
+.skin-blue .content p a:not(.btn), .skin-blue .help-block a { text-decoration: underline; }
+.skin-blue a:focus-visible, .skin-blue button:focus-visible, .skin-blue input:focus-visible, .skin-blue select:focus-visible, .skin-blue textarea:focus-visible { outline: 3px solid var(--ti-accent); outline-offset: 3px; }
+.skin-blue .content-header h1 { overflow-wrap: anywhere; }
+.skin-blue .box-body { overflow-x: auto; }
+.skin-blue .nav-tabs { display: flex; flex-wrap: wrap; }
+.skin-blue .nav-tabs>li { float: none; }
+.skin-blue .sidebar-menu a, .skin-blue .btn, .skin-blue .form-control { min-height: 44px; }
+@media (max-width: 767px) {
+    .skin-blue .main-header .logo { width: 100%; float: none; height: auto; min-height: 50px; white-space: normal; }
+    .skin-blue .main-header .navbar { margin-left: 0; }
+    .skin-blue .content-wrapper, .skin-blue .main-footer { margin-left: 0 !important; transform: none !important; width: auto; }
+    .skin-blue .main-sidebar { width: 230px; transform: translateX(-230px); z-index: 1100; }
+    .skin-blue.sidebar-open .main-sidebar { transform: translateX(0); }
+    .skin-blue .content { padding: 12px; }
+    .skin-blue .content-header>h1 { font-size: 23px; }
+    .skin-blue .row { margin-left: -8px; margin-right: -8px; }
+    .skin-blue [class*="col-"] { padding-left: 8px; padding-right: 8px; min-width: 0; }
+}
+
+.skin-blue .content-header>h1, .skin-blue .content-header>h1>small { color: var(--ti-bg-text); }
